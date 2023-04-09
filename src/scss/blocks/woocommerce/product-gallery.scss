@@ -1,0 +1,41 @@
+.product-gallery {
+  border: 1px solid #c9c9c9;
+  &__item {
+    position: relative;
+    height: 65.6rem;
+    img {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: block;
+    }
+  }
+  .slick-arrow {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 4rem;
+    height: 4rem;
+    font-size: 0;
+    color: transparent;
+    // background: #2A5859 url("../i/static/arrow-left.svg") no-repeat center center;
+    border-radius: 50%;
+    border: none;
+    z-index: 1000;
+    cursor: pointer;
+    transition: all 0.4s;
+    &:hover {
+      // background: #20BD60 url("../i/static/arrow-left.svg") no-repeat center center;
+    }
+  }
+  .slick-prev {
+    left: 3.2rem;
+  }
+  .slick-next {
+    left: initial;
+    right: 3.2rem;
+    transform: rotate(180deg);
+  }
+}

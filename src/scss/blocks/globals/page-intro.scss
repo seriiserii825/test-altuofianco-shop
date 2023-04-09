@@ -1,0 +1,76 @@
+.page-intro {
+  position: relative;
+  height: 55rem;
+  z-index: 2;
+  &.page-intro--light {
+    .page-intro__title {
+      color: $text-color;
+      &::after {
+        background: #B6D2CF;
+      }
+    }
+  }
+  &__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+  &__title,
+  &__subtitle {
+    position: relative;
+    color: white;
+    z-index: 2;
+  }
+  &__title {
+    position: absolute;
+    top: 32.2rem;
+    left: 12rem;
+    @include century;
+    font-weight: 400;
+    font-size: 3.4rem;
+    line-height: 3.8rem;
+    letter-spacing: 1.43rem;
+    text-transform: uppercase;
+    @media screen and (max-width: 1200px) {
+    	left: 3rem;
+    }
+    &::after {
+      content: '';
+      position: absolute;
+      bottom: -6.5rem;
+      left: 0;
+      width: 95.6rem;
+      height: 4px;
+      background-color: white;
+      @media screen and (max-width: 992px) {
+        width: 100%;
+      }
+    }
+    em {
+      font-size: 3.4rem;
+      font-weight: 400;
+      font-style: italic;
+      line-height: 3.8rem;
+      text-transform: initial;
+      letter-spacing: 0;
+      color: #509289;
+    }
+  }
+  &__subtitle {
+    position: absolute;
+    top: 13rem;
+    left: 27.2rem;
+    @include century;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 3.4rem;
+    line-height: 3.8rem;
+    @media screen and (max-width: 1200px) {
+      left: 3rem;
+    }
+  }
+}

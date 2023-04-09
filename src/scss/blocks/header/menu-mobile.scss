@@ -1,0 +1,14 @@
+.menu-mobile {
+  margin-bottom: 2rem;
+  li {
+    &.current-menu-item {
+      a {
+        border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+      }
+    }
+  }
+  a {
+    display: block;
+    padding: 16px;
+  }
+}

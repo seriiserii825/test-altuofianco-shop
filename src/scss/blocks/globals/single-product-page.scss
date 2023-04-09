@@ -1,0 +1,32 @@
+.single-product-page {
+	padding-bottom: 6rem;
+	background-color: white;
+	&__intro {
+		position: relative;
+		margin-bottom: -12.8rem;
+		z-index: 1;
+		@media screen and (max-width: 768px) {
+			margin-bottom: 1.2rem;
+		}
+	}
+	.product {
+		position: relative;
+		z-index: 2;
+	}
+	&__breadcrumbs {
+		position: absolute;
+		top: 33.5rem;
+		left: 11.8rem;
+		width: 95.6rem;
+		z-index: 2;
+		@media screen and (max-width: 1200px) {
+			left: 3rem;
+		}
+		@media screen and (max-width: 992px) {
+			width: 90%;
+		}
+		@media screen and (max-width: 500px) {
+			width: 84%;
+		}
+	}
+}

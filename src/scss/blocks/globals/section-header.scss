@@ -1,0 +1,15 @@
+.section-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  &__title {
+    margin-bottom: 1.4rem;
+    @include miamothin;
+    font-size: 6.4rem;
+    line-height: 1.1;
+    @media screen and (max-width: 992px) {
+      font-size: 4.4rem;
+    }
+  }
+}

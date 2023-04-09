@@ -1,0 +1,38 @@
+.page-privacy {
+  padding: 0 0 4rem;
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin-top: 6rem;
+    margin-bottom: 3rem;
+  }
+  .red {
+    display: inline-block;
+    color: red;
+    border: 1px solid red;
+  }
+  a {
+    font-weight: bold;
+    text-decoration: underline;
+  }
+  table {
+    border-collapse: collapse;
+    th {
+      color: white;
+      background-color: #444;
+    }
+    th,
+    td {
+      padding: 1rem 2rem;
+      border: 1px solid #aaa;
+    }
+  }
+  ul {
+    li {
+      margin-bottom: 1rem;
+    }
+  }
+}

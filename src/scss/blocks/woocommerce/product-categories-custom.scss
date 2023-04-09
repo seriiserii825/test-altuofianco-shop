@@ -1,0 +1,107 @@
+.product-categories-custom {
+  padding: 12.8rem 0 9.7rem;
+  background-color: $accent-light;
+  @media screen and (max-width: 576px) {
+    padding: 6rem 0;
+  }
+  .line {
+    top: -12.8rem;
+    left: 27%;
+    height: 125%;
+    background-color: #B6D2CF;
+    //background-color: darkmagenta;
+    opacity: .5;
+    @media screen and (max-width: 992px) {
+      display: none;
+    }
+  }
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1.6rem;
+    @media screen and (max-width: 576px) {
+      display: block;
+      margin: 0;
+    }
+    li {
+      position: relative;
+      flex-basis: calc(33.33% - 3.2rem);
+      margin: 0 1.6rem 3.2rem;
+      height: 53.4rem;
+      @media screen and (max-width: 1400px) {
+        height: 40rem;
+      }
+      @media screen and (max-width: 992px) {
+        flex-basis: calc(50% - 3.2rem);
+      }
+      @media screen and (max-width: 576px) {
+        margin: 0 0 3.2rem;
+      }
+      &:hover {
+        .product-categories-custom__footer {
+          background-color: darken($accent, 20%);
+        }
+        &::before {
+          opacity: 1;
+        }
+      }
+      &:first-of-type {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        &::before {
+          display: none;
+        }
+      }
+      .product-categories-custom__main-title {
+        position: relative;
+        color: $text-color;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        z-index: 1;
+      }
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 17.7%;
+        height: 83%;
+        background: linear-gradient(90deg, #509289 0%, rgba(80, 146, 137, 0) 100%);
+        mix-blend-mode: screen;
+        opacity: 0.7;
+        transition: all .4s;
+        z-index: 2;
+      }
+    }
+  }
+  &__footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 3.2rem;
+    width: 82.4%;
+    height: 9.1rem;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #FFFFFF;
+    background-color: $accent;
+    z-index: 2;
+    transition: all .4s;
+    @media screen and (max-width: 1400px) {
+      height: 7rem;
+    }
+    h3 {
+      font-size: 2rem;
+    }
+  }
+}

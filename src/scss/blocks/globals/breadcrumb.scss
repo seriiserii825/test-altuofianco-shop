@@ -1,0 +1,55 @@
+.breadcrumb {
+	display: flex;
+	align-items: center;
+	margin-bottom: 2.2rem;
+	@media screen and (max-width: 768px) {
+		display: block;
+	}
+	&__item {
+		position: relative;
+		padding-right: 1.55rem;
+		padding-left: 1.55rem;
+		@media screen and (max-width: 768px) {
+			margin-bottom: 1rem;
+			padding-left: 0;
+		}
+		&:first-of-type {
+			padding-left: 0;
+		}
+		&:last-of-type {
+			&::after {
+				display: none;
+			}
+		}
+		&::after {
+			content: "";
+			position: absolute;
+			top: 50%;
+			transform: translateY(-50%);
+			right: 0;
+			width: 0.6rem;
+			height: 1rem;
+			// background-image: url('../i/static/arrow-right.svg');
+			background-size: cover;
+			background-repeat: no-repeat;
+			@media screen and (max-width: 768px) {
+				display: none;
+			}
+		}
+	}
+	&__title {
+		font-weight: normal;
+		font-size: 1.8rem;
+		text-transform: uppercase;
+		color: $contrast;
+		transition: all 0.4s;
+	}
+	a {
+		display: block;
+		&:hover {
+			.breadcrumb__title {
+				color: $accent;
+			}
+		}
+	}
+}

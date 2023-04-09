@@ -1,0 +1,119 @@
+.agent {
+  position: absolute;
+  top: 20rem;
+  left: 4rem;
+  display: none;
+  padding: 1.6rem 4.6rem 1.6rem 1.6rem;
+  box-shadow: 0 0 6.4rem rgba(10, 77, 87, 0.1);
+  border-radius: 6.4rem;
+  z-index: 100;
+  &.visible {
+    display: block;
+  }
+  &.active {
+    background: #FFFFFF;
+    .agent__btn {
+      display: none;
+    }
+    .agent__icon {
+      display: none;
+    }
+    .agent__content {
+      display: block;
+    }
+  }
+  &__wrap {
+    display: flex;
+    align-items: center;
+  }
+  &__left {
+    position: relative;
+  }
+  &__img {
+    position: relative;
+    margin-right: 1.6rem;
+    width: 9.6rem;
+    height: 9.6rem;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #E3E5E6,
+    0 0 0 4px white,
+    0 0 0 10px #56CD86;
+    overflow: hidden;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+  }
+  &__icon {
+    position: absolute;
+    top: 63%;
+    right: 11%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.6rem;
+    height: 1.6rem;
+    background: $accent;
+    border-radius: 50%;
+    z-index: 2;
+  }
+  &__phone {
+    top: 78%;
+    right: 21%;
+  }
+  &__title {
+  }
+  &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 15.2rem;
+    height: 2.1rem;
+    font-size: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white;
+    background: #FF5858;
+    border-radius: 3.2rem;
+    border: none;
+    cursor: pointer;
+    transition: all .4s;
+    &:hover {
+      background: darken(#FF5858, 5%);
+      box-shadow: 0 0 0 1px #FF5858;
+    }
+  }
+  &__content {
+    display: none;
+  }
+  &__label {
+    font-size: 8px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ADADAD;
+  }
+  &__title {
+    margin-bottom: 0.8rem;
+    font-family: $font_2;
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+  }
+  &__list {
+    a {
+      display: flex;
+      align-items: center;
+      font-family: $font_2;
+      font-size: 12px;
+    }
+    svg {
+      flex: 0 0 14px;
+      margin-right: 1rem;
+    }
+  }
+}

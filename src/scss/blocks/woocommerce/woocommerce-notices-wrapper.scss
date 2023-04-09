@@ -1,0 +1,12 @@
+.woocommerce-message {
+  position: relative;
+	// margin: 3rem 0;
+	padding: 3rem;
+	// background-color: black;
+	border: 1px solid $accent;
+  z-index: 1000;
+	a {
+		text-decoration: underline;
+		color: $accent;
+	}
+}

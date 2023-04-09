@@ -1,0 +1,18 @@
+.form-header {
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.6rem;
+  }
+  &__title {
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  &__message {
+    margin-bottom: 3.2rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #9d9c9c;
+  }
+}

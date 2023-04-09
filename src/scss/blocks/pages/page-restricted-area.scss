@@ -1,0 +1,10 @@
+.page-restricted-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: $accent;
+  &__main {
+    flex: 0 0 64rem;
+    padding: 6.4rem 0;
+  }
+}

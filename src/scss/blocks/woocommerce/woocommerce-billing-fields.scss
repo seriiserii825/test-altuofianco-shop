@@ -1,0 +1,11 @@
+.woocommerce-billing-fields {
+	&__field-wrapper {
+		display: flex;
+		justify-content: space-between;
+		align-items: flex-start;
+        flex-wrap: wrap;
+        p {
+            width: 48%;
+        }
+	}
+}

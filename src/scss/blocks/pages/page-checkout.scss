@@ -1,0 +1,12 @@
+.page-checkout {
+  padding: 4rem 0;
+  &__title {
+    margin-bottom: 4rem;
+    font-size: 4rem;
+  }
+  .woocommerce-billing-fields__field-wrapper {
+    label {
+      font-weight: bold;
+    }
+  }
+}
